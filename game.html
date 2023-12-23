@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Metric Challenge Game</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+    <header>
+        <h1>Stock Metric Challenge Game</h1>
+    </header>
+
+    <main>
+        <!-- Form for entering stock tickers -->
+        <section id="tickerInputSection">
+            <form id="tickerForm">
+                <label for="tickerInput">Enter Stock Tickers (separated by commas):</label>
+                <input type="text" id="tickerInput" placeholder="AAPL, MSFT, GOOGL">
+                <button type="submit">Create Watchlist to Self Test</button>
+            </form>
+            <div id="scoreDisplay">
+                <p>Score <span id="currentScore">0</span></p>
+            </div>
+        </section>
+        
+        <section id="setsSection">
+            <div id="setsLinks"></div>
+            <div id="buttonsContainer"> <!-- Container for the buttons -->
+                <a href="#" id="clearSetsButton">Clear sets</a>
+                <button id="passButton">Pass</button>
+            </div>
+        </section>
+        
+    
+        <!-- Display area for company name and financial metric -->
+        <section id="questionSection">
+            <div id="stockCard">
+                <h2 id="companyName"></h2> <!-- Initially blank -->
+                <p id="financialMetric"></p> <!-- Initially blank -->
+            </div>
+        </section>
+        
+        <section id="answerOptions">
+            <button class="answerButton" style="display: none;"></button>
+            <button class="answerButton" style="display: none;"></button>
+            <button class="answerButton" style="display: none;"></button>
+            <button id="nextButton" style="display: none;">Next</button> <!-- Next button added here -->
+        </section>
+        
+    </main>
+
+    <footer>
+        <p>Stock Metric Challenge Game © 2023</p>
+    </footer>
+
+    <script src="script.js"></script> <!-- Link to your JavaScript file -->
+</body>
+</html>

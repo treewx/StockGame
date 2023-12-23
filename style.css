@@ -1,0 +1,147 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background: #007bff;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+header h1 {
+    margin: 0;
+}
+
+main {
+    padding: 20px;
+}
+
+#buttonsContainer {
+    text-align: center; /* Centers the content inside the container */
+}
+
+#clearSetsButton {
+    display: inline-block; /* Ensures the link behaves as an inline element */
+    color: inherit; /* Or any color you prefer */
+    text-decoration: underline; /* Adds underline to indicate it's a link */
+    cursor: pointer; /* Changes cursor on hover */
+    margin-right: 10px; /* Spacing between Clear Sets and Pass button */
+}
+
+#passButton {
+    padding: 10px 20px;
+    background-color: #dc3545; /* Different color to distinguish it */
+    color: white;
+    border: none;
+    cursor: pointer;
+    display: inline-block; /* To align with Clear Sets button */
+}
+
+#passButton:hover {
+    background-color: #c82333;
+}
+
+
+
+#tickerInputSection {
+    margin-bottom: 20px;
+}
+
+#tickerForm {
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+#tickerForm input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+}
+
+#tickerForm button {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#tickerForm button:hover {
+    background-color: #218838;
+}
+
+#scoreDisplay {
+    text-align: center;
+    font-size: 1.2em;
+    margin-top: 20px;
+}
+
+.top-score-display {
+    font-size: 0.8em; /* Smaller font size */
+    color: #666; /* Example color, adjust as needed */
+    margin-top: 5px; /* Spacing from the button */
+}
+
+#questionSection {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#setsLinks {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px; /* Adjust the gap between buttons as needed */
+    margin-top: 20px;
+}
+
+#stockCard {
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    padding: 20px;
+    margin: auto;
+    max-width: 300px;
+}
+
+#answerOptions {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.answerButton {
+    padding: 10px 20px;
+    background-color: #17a2b8;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.answerButton:hover {
+    background-color: #138496;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 30px;
+    background: #343a40;
+    color: #fff;
+}
