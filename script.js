@@ -110,7 +110,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
     
-    const ALPHA_VANTAGE_API_KEY = '6QE0V2GEOGEIN5J9'; // Replace with your API key
+    //const ALPHA_VANTAGE_API_KEY = '6QE0V2GEOGEIN5J9'; // Replace with your API key
 
     function loadSet(setName) {
         currentSet = setName;
@@ -130,7 +130,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function loadStock(ticker) {
     console.log(`Loading stock: ${ticker}`);
     currentStock = ticker;
-    fetch(`https://www.alphavantage.co/query?function=OVERVIEW&symbol=${ticker}&apikey=${ALPHA_VANTAGE_API_KEY}`)
+    fetch(`https://204am.com/av/av.php?function=OVERVIEW&symbol=${ticker}`)
     .then(response => response.json())
     .then(data => {
         console.log("API response for", ticker, ":", data); // This line is for debugging purposes. You can remove it later.
