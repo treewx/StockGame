@@ -110,7 +110,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
     
-    //const ALPHA_VANTAGE_API_KEY = '6QE0V2GEOGEIN5J9'; // Replace with your API key
 
     function loadSet(setName) {
         currentSet = setName;
